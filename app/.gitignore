@@ -1,0 +1,32 @@
+# OSX
+#
+.DS_Store
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Bundle artifact
+*.jsbundle
+*.bundle
+
+dist/
+
+.env
+
+.vscode
+
+release
+
+# Cordova Global
+plugins/
+platforms/
+www/
+
+build.json
+
+*.keystore
+*.der
+*.jar

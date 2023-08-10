@@ -1,0 +1,263 @@
+.meet-extension .join-start {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  position: relative;
+}
+
+.meet-extension .participant .not-viewable {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #e9ecee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.meet-extension .list {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  position: relative;
+}
+
+.meet-extension {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  position: relative;
+}
+
+.meet-extension .header {
+  height: 75px;
+  border-bottom: 1px solid #eaedef;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.meet-extension .header .subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  color: #11161c;
+  padding-left: 25px;
+}
+
+.meet-extension .header .title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #11161c;
+  padding-left: 25px;
+}
+
+.meet-extension .participants {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+}
+
+.meet-extension.all .participants {
+  width: 100%;
+  flex: 1;
+  display: flex;
+}
+
+.meet-extension .participants .scroll-container {
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+.meet-extension.all .participants .scroll-container {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.meet-extension .participants .scroll-container .inner-content {
+  height: 100%;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.meet-extension.all .participants .scroll-container .inner-content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.meet-extension .participants .participant {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.meet-extension .participants .participant .close-main-screen {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 15px;
+  z-index: 10;
+}
+
+.meet-extension .participants .participant.focus {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: -moz-calc(90% - (160px));
+  height: -webkit-calc(90% - (160px));
+  height: calc(90% - (160px));
+}
+
+.meet-extension .participants .participant .name {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.meet-extension .participants .participant:hover .name {
+  opacity: 1;
+}
+
+.meet-extension .participants .participant .name .text {
+  color: white;
+  font-size: 8px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.meet-extension .participants .participant:last-child {
+  margin-right: 0px;
+}
+
+.meet-extension.all .participants .participant {
+  margin: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border 0.5s;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.meet-extension.all .participants .participant:hover {
+  border: 2px solid #e9ecee;
+}
+
+.meet-extension .controls {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 80px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.meet-extension .control-button {
+  padding: 0px 10px 0px 10px;
+  background: #f8f9fa;
+  margin: 5px;
+  border-radius: 20px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border 0.5s;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #343a40;
+}
+
+.meet-extension .control-button:hover {
+  border: 2px solid #e9ecee;
+}
+
+.meet-extension .control-button.red {
+  background: #ef4056;
+  margin-right: 25px;
+}
+
+.meet-extension .call {
+  width: 100%;
+  padding: 10px 25px 10px 25px;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.meet-extension .call .topic {
+  font-size: 14px;
+  font-weight: 800;
+  color: #11161c;
+}
+
+.meet-extension .call .date {
+  font-size: 12px;
+  font-weight: 500;
+  color: #acb5bd;
+}

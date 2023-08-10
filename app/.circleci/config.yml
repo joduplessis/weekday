@@ -1,0 +1,28 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:10.15
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          working_directory: /
+          command: |
+            echo 'export PATH=/root/.local/bin:$PATH' >> $BASH_ENV
+            source $BASH_ENV
+            apt-get -y -qq update
+            apt install -y -q software-properties-common
+            add-apt-repository -y ppa:deadsnakes/ppa
+            apt-get -y -qq update
+            apt-get -y -qq install python3.6
+            curl -O https://bootstrap.pypa.io/get-pip.py
+            python3 get-pip.py --user
+            pip3 install awscli --upgrade --user
+      - run: npm install
+      - run:
+          name: Deploy app
+          command: |
+            aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+            aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+            npm run deploy:no-cli

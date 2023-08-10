@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <base href="/" /> -->
+    <title>Weekday</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Weekday" />
+    <meta name="description" content="Give your team superpowers." />
+
+    <!-- Taken from Cordova -->
+    <!-- ------------------ -->
+    <!-- ------------------ -->
+    <!-- ------------------ -->
+    <!--
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+    />
+    -->
+    <!-- Update policy to allow API requests -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+      default-src * data: blob: ws: wss: gap://ready file://*;
+      style-src * 'unsafe-inline';
+      script-src * 'unsafe-inline' 'unsafe-eval';
+      connect-src * ws: wss:;"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <!-- ------------------ -->
+    <!-- ------------------ -->
+    <!-- ------------------ -->
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="apple-mobile-web-app-title" content="Weekday" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="icon152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icon180.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="icon167.png" />
+
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3"></script>
+
+    <!-- Yack -->
+    <script src="https://assets.yack.app/0.0.1.js"></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ycb3zss.css" />
+  </head>
+  <body class="h-100">
+    <div id="modal-root" class="modal-root"></div>
+    <div id="context-root" class="context-root"></div>
+    <div id="root" class="root"></div>
+
+    <!-- Cordova will be supplied by CDV -->
+    <script src="cordova.js"></script>
+  </body>
+</html>

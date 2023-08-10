@@ -1,0 +1,95 @@
+.month-day-task {
+  width: 100%;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: stretch;
+  cursor: pointer;
+}
+
+.month-day-task .task-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  flex: 1;
+  padding-left: 5px;
+  overflow: hidden;
+}
+
+.month-day-task:hover {
+  opacity: 0.75;
+}
+
+.month-day-task .task-avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  padding-left: 5px;
+}
+
+.month-day-task .checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  transform: scale(0.75);
+}
+
+.month-day-task .task-title {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  width: 95%;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.month-day-task .task-title-text {
+  color: #485056;
+  font-size: 12px;
+  font-weight: 700;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.month-day-task .task-channel {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #adb5bd;
+  font-size: 7px;
+  flex: 1;
+}
+
+.month-day-task .subtask-count {
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.month-day-task .subtask-count .text {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #adb5bd;
+  font-size: 8px;
+  margin-left: -8px;
+}

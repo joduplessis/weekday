@@ -1,0 +1,7 @@
+{
+  "options": {},
+  "indexes": [
+    { "v": 2, "key": { "_id": 1 }, "name": "_id_", "ns": "weekday.tasks" }
+  ],
+  "uuid": "0cce1dfeebcf4f40a83bb2697a18e514"
+}

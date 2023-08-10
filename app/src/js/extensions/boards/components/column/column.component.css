@@ -1,0 +1,75 @@
+.board-column {
+  width: 250px;
+  height: 100%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  border-left: 1px solid #e9ecee;
+}
+
+.board-column.hide {
+  width: 0px;
+  overflow: hidden;
+}
+
+.board-column .column-container {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transition: 0.01s left;
+  background: #f8f9fa;
+}
+
+.board-column .column-container.over {
+  opacity: 0.2;
+}
+
+.board-column .column-container.shift {
+  left: 250px;
+  top: 0px;
+}
+
+.board-column .column-container.last {
+  left: 250px;
+}
+
+.board-column .column-container.dragged-section {
+  opacity: 0.25;
+}
+
+.board-column .column-container .column-title {
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  height: 50px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.board-column .column-container .column-title textarea,
+.board-column .column-container .column-title .column-title-text {
+  color: #11161c;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  resize: none;
+  width: 99%;
+  flex: 1;
+}
+
+.board-column .column-container .column-title textarea::placeholder {
+  color: #e9ecee;
+}
+
+.board-column .column-container .column-cards {
+  height: calc(100% - 50px);
+  overflow: scroll;
+  width: 100%;
+}

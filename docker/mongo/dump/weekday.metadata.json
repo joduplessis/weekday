@@ -1,0 +1,7 @@
+{
+  "options": {},
+  "indexes": [
+    { "v": 2, "key": { "_id": 1 }, "name": "_id_", "ns": "weekday.weekday" }
+  ],
+  "uuid": "981dc660afe04f35ad87bfc3a02bb0ab"
+}

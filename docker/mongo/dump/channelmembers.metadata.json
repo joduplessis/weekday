@@ -1,0 +1,31 @@
+{
+  "options": {},
+  "indexes": [
+    {
+      "v": 2,
+      "key": { "_id": 1 },
+      "name": "_id_",
+      "ns": "weekday.channelmembers"
+    },
+    {
+      "v": 2,
+      "unique": true,
+      "key": { "channel": 1, "user": 1, "team": 1 },
+      "name": "channel_1_user_1_team_1",
+      "ns": "weekday.channelmembers",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": { "_fts": "text", "_ftsx": 1 },
+      "name": "name_text",
+      "ns": "weekday.channelmembers",
+      "background": true,
+      "weights": { "name": 1 },
+      "default_language": "english",
+      "language_override": "language",
+      "textIndexVersion": 3
+    }
+  ],
+  "uuid": "23e3b993e3e0463286135fcb1083a80e"
+}

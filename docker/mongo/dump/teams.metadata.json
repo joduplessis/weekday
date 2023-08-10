@@ -1,0 +1,15 @@
+{
+  "options": {},
+  "indexes": [
+    { "v": 2, "key": { "_id": 1 }, "name": "_id_", "ns": "weekday.teams" },
+    {
+      "v": 2,
+      "unique": true,
+      "key": { "slug": 1 },
+      "name": "slug_1",
+      "ns": "weekday.teams",
+      "background": true
+    }
+  ],
+  "uuid": "8a202f61171e4257b2c84e7c66feed0f"
+}

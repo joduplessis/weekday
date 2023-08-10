@@ -1,0 +1,18 @@
+{
+  "options": {},
+  "indexes": [
+    { "v": 2, "key": { "_id": 1 }, "name": "_id_", "ns": "weekday.channels" },
+    {
+      "v": 2,
+      "key": { "_fts": "text", "_ftsx": 1 },
+      "name": "subject_text_body_text",
+      "ns": "weekday.channels",
+      "background": true,
+      "weights": { "body": 1, "subject": 1 },
+      "default_language": "english",
+      "language_override": "language",
+      "textIndexVersion": 3
+    }
+  ],
+  "uuid": "198380cbf6304e9483e955fb637e4588"
+}

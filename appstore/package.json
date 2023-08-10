@@ -1,0 +1,26 @@
+{
+  "name": "weekday-appstore",
+  "version": "0.1.0",
+  "description": "Official app store for Weekday",
+  "main": "index.js",
+  "dependencies": {
+    "@weekday/elements": "^0.9.30",
+    "isomorphic-unfetch": "^3.0.0",
+    "moment": "^2.24.0",
+    "next": "^9.1.3",
+    "next-server": "^9.0.5",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-feather": "git+https://github.com/joduplessis/react-feather.git",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "export": "next export"
+  },
+  "author": "Jo du Plessis",
+  "license": "MIT"
+}

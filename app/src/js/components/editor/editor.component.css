@@ -1,0 +1,160 @@
+.editor-component {
+  width: 100%;
+  border-bottom: 0px solid #eaedef;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.editor-component .editor-inner {
+  margin: 0px;
+  width: 100%;
+}
+
+.editor-component .editor-compose {
+  padding: 20px;
+  overflow: scroll;
+  max-height: 300px;
+}
+
+.editor-component .attachments-toolbar {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.2s;
+  border-top: 0px solid #eaedef;
+  background: #f8f9fa;
+  background-color: transparent;
+  padding: 10px 20px 10px 20px;
+}
+
+.editor-component .formatting-toolbar {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: fit-content;
+  opacity: 1;
+  transition: opacity 0.2s;
+  border-top: 0px solid #eaedef;
+  background: #f8f9fa;
+  background-color: transparent;
+  padding: 0px;
+  padding-top: 0px;
+  padding: 0px 20px 10px 20px;
+  margin-top: 5px;
+  position: relative;
+  z-index: 101;
+}
+
+.editor-component .formatting-icon {
+  padding: 0px 0px 0px 0px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.25;
+  margin-right: 10px;
+}
+
+.editor-component .formatting-icon.active {
+  opacity: 1;
+}
+
+.editor-component:hover .formatting-toolbar {
+  opacity: 1;
+}
+
+.editor-component .editable * {
+  font-size: 14px;
+}
+
+.editor-component .editable blockquote {
+  color: #acb5bd;
+  padding: 10px;
+  border-left: 2px solid #acb5bd;
+  margin: 0px;
+}
+
+.editor-component .editable p {
+  font-size: 14px;
+}
+
+.editor-component .editable code,
+.editor-component .editable code span {
+  font-family: monospace;
+}
+
+.editor-component .editable strong {
+  font-weight: 900;
+}
+
+.editor-component .editable u {
+  text-decoration: underline;
+}
+
+.editor-component .editable em {
+  font-size: 14px;
+}
+
+.ql-mention-list-container {
+  width: 270px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(30, 30, 30, 0.08);
+  z-index: 9001;
+  overflow: auto;
+}
+.ql-mention-loading {
+  line-height: 44px;
+  padding: 0 20px;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.ql-mention-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.ql-mention-list-item {
+  cursor: pointer;
+  line-height: 35px;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+.ql-mention-list-item.disabled {
+  cursor: auto;
+}
+.ql-mention-list-item.selected {
+  background-color: #eaedef;
+  text-decoration: none;
+}
+.mention {
+  height: 0px;
+  width: 65px;
+  border-radius: 5px;
+  background-color: #dee2e5;
+  border: 2px solid #f0f3f5;
+  padding: 0px 0;
+  margin-right: 2px;
+  font-weight: 600;
+  user-select: all;
+}
+.mention > span {
+  margin: 0 0px;
+}

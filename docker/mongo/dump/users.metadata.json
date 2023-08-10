@@ -1,0 +1,26 @@
+{
+  "options": {},
+  "indexes": [
+    { "v": 2, "key": { "_id": 1 }, "name": "_id_", "ns": "weekday.users" },
+    {
+      "v": 2,
+      "unique": true,
+      "key": { "username": 1 },
+      "name": "username_1",
+      "ns": "weekday.users",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": { "_fts": "text", "_ftsx": 1 },
+      "name": "name_text_username_text_description_text",
+      "ns": "weekday.users",
+      "background": true,
+      "weights": { "description": 1, "name": 1, "username": 1 },
+      "default_language": "english",
+      "language_override": "language",
+      "textIndexVersion": 3
+    }
+  ],
+  "uuid": "346bb8709a9940908d522477a400788e"
+}

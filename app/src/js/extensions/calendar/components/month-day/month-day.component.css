@@ -1,0 +1,81 @@
+.month-day-component {
+  flex: 1;
+  border-top: 1px solid #eef2f5;
+  border-left: 1px solid #eef2f5;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.month-day-component.today {
+  background: #f9fafc;
+}
+
+.month-day-component.over,
+.month-day-component:hover {
+  background-color: #f9fafc;
+}
+
+.month-day-component .add {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  color: #202529;
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #eef2f5;
+  border-radius: 50%;
+  z-index: 2;
+  transition: 0.2s background-color;
+  cursor: pointer;
+  display: none;
+}
+
+.month-day-component:hover .add {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.month-day-component .add:hover {
+  background-color: #d3dce6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.month-day-component .day {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  color: #d3dce6;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.month-day-component.today .day {
+  color: #718093;
+  font-weight: 600;
+}
+
+.month-day-component .task-container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}

@@ -1,0 +1,43 @@
+{
+  "name": "weekday-polls",
+  "version": "0.1.0",
+  "description": "Polls app for Weekday",
+  "main": "index.js",
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.3",
+    "@weekday/dev-kit": "^0.1.13",
+    "@weekday/elements": "^0.9.30",
+    "apollo-boost": "^0.4.4",
+    "apollo-link": "^1.2.13",
+    "apollo-link-ws": "^1.0.19",
+    "apollo-utilities": "^1.3.2",
+    "axios": "^0.19.2",
+    "chroma-js": "^2.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "moment": "^2.24.0",
+    "next": "^9.1.3",
+    "next-apollo": "^3.1.9",
+    "next-offline": "^5.0.2",
+    "next-server": "^9.0.5",
+    "react": "^16.11.0",
+    "react-apollo": "^3.1.3",
+    "react-dom": "^16.11.0",
+    "react-feather": "git+https://github.com/joduplessis/react-feather.git",
+    "styled-components": "^4.4.1",
+    "subscriptions-transport-ws": "^0.9.16",
+    "websocket": "^1.0.30",
+    "ws": "^7.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next -p 3002",
+    "build": "next build",
+    "start": "next start -p 3002"
+  },
+  "author": "Jo du Plessis",
+  "license": "MIT"
+}

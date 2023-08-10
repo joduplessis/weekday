@@ -1,0 +1,84 @@
+.tasks-header {
+  height: 75px;
+  border-bottom: 1px solid #eaedef;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding-right: 25px;
+}
+
+.tasks-header .tasks-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #11161c;
+  padding-left: 25px;
+}
+
+.tasks-header .tasks-progress {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #718093;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-size: 10px;
+  font-weight: 900;
+  margin-right: auto;
+}
+
+.tasks-container {
+  flex: 1;
+  width: 100%;
+  overflow: scroll;
+  background: #f8f9fa;
+  background: white;
+}
+
+.tasks-container .tasks {
+  padding: 15px;
+  width: 100%;
+}
+
+.tasks-container .task-list {
+  width: 100%;
+}
+
+.date-divider {
+  padding-left: 10px;
+}
+
+.date-divider-text {
+  font-size: 10px;
+  font-weight: 800;
+  color: #11161c;
+}
+
+.tasks-header .icon-button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.25s;
+}
+
+.tasks-header .icon-button:hover {
+  background: #f8f9fa;
+}
+
+.tasks-header .icon-button:hover svg {
+  background: #f8f9fa;
+}
+
+.tasks-header .icon-button:hover {
+  fill: #202529;
+}

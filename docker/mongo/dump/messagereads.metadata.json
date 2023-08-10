@@ -1,0 +1,12 @@
+{
+  "options": {},
+  "indexes": [
+    {
+      "v": 2,
+      "key": { "_id": 1 },
+      "name": "_id_",
+      "ns": "weekday.messagereads"
+    }
+  ],
+  "uuid": "cfdcf7eba7f94eb0870b28df70686f49"
+}

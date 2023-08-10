@@ -1,0 +1,165 @@
+.messages-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.messages-container .compose {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+  background: white;
+  border-top: 1px solid #edf0f2;
+  width: 100%;
+  padding: 20px;
+}
+
+.messages-container .compose textarea {
+  color: #202529;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  width: 100%;
+  resize: none;
+}
+
+.messages-container .compose textarea::placeholder {
+  color: #adb5bd;
+}
+
+.messages-container .files {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  background: white;
+}
+
+.messages-container .files .file {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.messages-container .files .file.borderless {
+  border-bottom: none;
+}
+
+.messages-container .files .file a.filename {
+  color: #11171d;
+  font-weight: 600;
+  font-size: 12px;
+  display: block;
+  flex: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.messages-container .files .file a.filename:hover {
+  text-decoration: underline;
+}
+
+.messages-container .messages {
+  flex: 1;
+  width: 100%;
+  background: #edf0f2;
+  position: relative;
+}
+
+/* Get around parent flex issue */
+.messages-container .messages .scrolling {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.messages-container .messages .scrolling .inner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.messages-container .messages .message {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.messages-container .messages .message .message-files {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.messages-container .messages .message .user {
+  padding-left: 10px;
+  color: #202529;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.messages-container .messages .message .date {
+  padding-left: 10px;
+  color: #adb5bd;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.messages-container .messages .message .text {
+  margin-left: 10px;
+  color: #202529;
+  font-size: 14px;
+  font-weight: 500;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.messages-container .messages .message .text p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.messages-container .messages .message .text code {
+  font-family: monospace;
+}
+
+.messages-container .messages .message .text s,
+.messages-container .messages .message .text del,
+.messages-container .messages .message .text strike {
+  text-decoration: line-through;
+}

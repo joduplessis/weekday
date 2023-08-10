@@ -1,0 +1,65 @@
+{
+  "name": "@weekday/dev-kit",
+  "title": "Weekday DevKit",
+  "keywords": [
+    "Weekday"
+  ],
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "sideEffects": [
+    "lib/*"
+  ],
+  "pre-commit": [],
+  "files": [
+    "lib"
+  ],
+  "browserslist": [
+    "last 2 version",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 9"
+  ],
+  "repository": "https://github.com/WeekdayApp/dev-kit",
+  "bugs": {
+    "url": "https://github.com/WeekdayApp/dev-kit",
+    "email": "jo@joduplessis.com"
+  },
+  "contributors": [
+    {
+      "name": "joduplessis"
+    }
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/WeekdayApp/dev-kit",
+  "deprecated": false,
+  "version": "0.1.13",
+  "description": "Development kit for building apps for Weekday",
+  "scripts": {
+    "test": "jest",
+    "jsdoc": "jsdoc",
+    "jsdoc2md": "jsdoc2md",
+    "docs2md": "npm run jsdoc2md ./lib/index.js >> ./docs/index.md",
+    "docs": "npm run jsdoc ./lib ./README.md && rm -rf ./docs && mv ./out ./docs",
+    "dev": "tsc -w -p tsconfig.json",
+    "build": "tsc -p tsconfig.json",
+    "build:docs": "npm run docs && npm run docs2md",
+    "lint": "tslint --project ./"
+  },
+  "author": "Jo du Plessis",
+  "license": "MIT",
+  "peerDependencies": {},
+  "dependencies": {
+    "jsdoc": "^3.6.6"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "jsdoc-to-markdown": "^6.0.1",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.5.3"
+  }
+}
