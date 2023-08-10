@@ -221,11 +221,6 @@ export default function Hero(props) {
             </button>
           </form>
         </div>
-
-        <p>
-          Weekday is a self hosted OSS messaging platform for the teams of all sizes!. 
-          You can get it <a href="https://github.com/joduplessis/weekday" target="_blank">here</a>.
-        </p>
       </div>
     </React.Fragment>
   );
