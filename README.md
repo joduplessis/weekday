@@ -21,3 +21,7 @@ Please see each folder.
 - [x] Basic version of the platform
 - [ ] Documentation
 - [ ] Automated Docker builds
+
+### Footnote
+
+For more information, please see [this link](https://joduplessis.com/work/weekday).
