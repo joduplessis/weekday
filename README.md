@@ -21,8 +21,9 @@ Please see each folder.
 ### To do
 
 - [x] Basic version of the platform
-- [ ] Documentation
+- [ ] Documentation ⚠️
 - [ ] Automated Docker builds
+- [ ] Cloud version
 
 ### Footnote
 
