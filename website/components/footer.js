@@ -74,7 +74,7 @@ export default function Footer(props) {
       <div className="footer">
         <ul>
           <li>
-            <a href="#">Weekday &copy; 2022</a>
+            <a href="#">Weekday &copy; 2023</a>
           </li>
           <li>
             <a href="/privacypolicy">Privacy policy</a>

@@ -109,7 +109,7 @@ export default function Subscribe(props) {
         }
       `}</style>
 
-      <div className="subscribe">
+      <div className="subscribe" style={{ display: 'none' }}>
         {/*
         <h1>
           Join our mailing list

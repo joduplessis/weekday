@@ -66,7 +66,7 @@ export default function Downloads(props) {
           Join our mailing list
         </h1>
         */}
-        <h2>We support the following platforms:</h2>
+        <h2>Following platform builds are supported:</h2>
         <div className="platforms">
           <div className="platform">
             <a href="#" target="_blank">

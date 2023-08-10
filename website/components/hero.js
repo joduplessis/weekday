@@ -176,12 +176,12 @@ export default function Hero(props) {
       <div className="hero">
         <h1>Level up your team</h1>
         <h2>
-          Weekday is a messaging-first collaboration platform that gives your
+          Weekday is an open source messaging-first collaboration platform that gives your
           team superpowers.
         </h2>
-        <h3>Keep updated on new developments</h3>
+        <h3>Now Open Source!</h3>
 
-        <div className="closed-beta">
+        <div className="closed-beta" style={{ display: 'none' }}>
           <form
             className="js-cm-form"
             id="subForm"
@@ -223,9 +223,8 @@ export default function Hero(props) {
         </div>
 
         <p>
-          Weekday is a self hosted messaging platform for the enterprise. We
-          offer special discounts for teams of less than 100. Please read our
-          FAQ for more information.
+          Weekday is a self hosted OSS messaging platform for the teams of all sizes!. 
+          You can get it <a href="https://github.com/joduplessis/weekday" target="_blank">here</a>.
         </p>
       </div>
     </React.Fragment>

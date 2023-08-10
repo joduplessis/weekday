@@ -88,11 +88,11 @@ export default function Header(props) {
               Support
             </a>
             <a
-              href="mailto:sales@weekday.work"
+              href="mailto:support@weekday.work"
               target="_blank"
               className="button"
             >
-              Contact Sales
+              Contact Support
             </a>
           </div>
         </div>

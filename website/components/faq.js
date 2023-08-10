@@ -115,12 +115,7 @@ export default function Faq(props) {
 
         <Row
           title="I want to know more about it"
-          text="<a href='mailto:sales@weekday.work' style='color: #00aeff;'>Contact us</a> at any time to set up a demo."
-        />
-
-        <Row
-          title="This seems very new, what's the story?"
-          text="Weekday is a new messaging platform built from the ground up to make communication & collaboration easier for your company."
+          text="<a href='mailto:support@weekday.work' style='color: #00aeff;'>Contact us</a> at any time if you have any questions."
         />
 
         <Row
@@ -134,18 +129,13 @@ export default function Faq(props) {
         />
 
         <Row
-          title="I need to connect my GitHub (or other) account"
-          text="We are busy building more integrations, in the meantime you can use the Zapier app to connect almost any other platform."
-        />
-
-        <Row
           title="How do I build apps & integrations"
-          text="We have well documented guides on how your organization can build apps & integrate your existing systems easily."
+          text="You are able to build any sort of integration with a flexible app-builder."
         />
 
         <Row
           title="Something has broken / I can't log in"
-          text="Sorry about that! Weekday is still in beta, so please expect things to break from time to time. You can email us <a href='mailto:support@weekday.work' style='color: #00aeff;'>here</a> for any issues."
+          text="You can email us for support issues <a href='mailto:support@weekday.work' style='color: #00aeff;'>here</a>. We will still formalize pricing plans so you get the best support."
         />
       </div>
     </React.Fragment>
