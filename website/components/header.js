@@ -79,14 +79,6 @@ export default function Header(props) {
             <a href="/">Home</a>
             <a href="/#features">Features</a>
             <a href="/#faq">FAQ</a>
-            <a href="/#faq">Pricing</a>
-            <a
-              href="mailto:support@weekday.work"
-              id="yack"
-              data-inbox="weekday"
-            >
-              Support
-            </a>
             <a
               href="mailto:support@weekday.work"
               target="_blank"
