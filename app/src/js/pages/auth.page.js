@@ -546,7 +546,7 @@ class AuthPage extends React.Component {
                   <Subtitle style={{ color: 'red', fontSize: 15 }}>
                     We're in alpha! Please{' '}
                     <a
-                      href="mailto:support@weekday.work"
+                      href="https://github.com/joduplessis/weekday"
                       style={{ fontWeight: 'bold', textDecoration: 'underline', color: 'red', fontSize: 15 }}
                     >
                       let us know

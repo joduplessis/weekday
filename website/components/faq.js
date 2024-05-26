@@ -115,7 +115,7 @@ export default function Faq(props) {
 
         <Row
           title="I want to know more about it"
-          text="<a href='mailto:support@weekday.work' style='color: #00aeff;'>Contact us</a> at any time if you have any questions. Or check out the GitHub repo!"
+          text="Check out the <a href='https://github.com/joduplessis/weekday' style='color: #00aeff;'>GitHub repo</a>!"
         />
 
         <Row
@@ -131,16 +131,6 @@ export default function Faq(props) {
         <Row
           title="How do I build apps & integrations"
           text="You are able to build any sort of integration with a flexible app-builder."
-        />
-
-        <Row
-          title="Something has broken / I can't log in"
-          text="You can email us for support issues <a href='mailto:support@weekday.work' style='color: #00aeff;'>here</a>. We will still formalize pricing plans so you get the best support."
-        />
-
-        <Row
-          title="I need help deploying this!"
-          text="Please email us <a href='mailto:support@weekday.work' style='color: #00aeff;'>here</a>."
         />
       </div>
     </React.Fragment>

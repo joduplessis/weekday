@@ -355,7 +355,7 @@ export default function Features(props) {
           <div className="feature">
             <h3>
               ... and more!{" "}
-              <a href="mailto:support@weekday.work" target="_blank">
+              <a href="https://github.com/joduplessis/weekday" target="_blank">
                 Contact Us Now
               </a>
             </h3>

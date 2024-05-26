@@ -80,7 +80,7 @@ export default function Header(props) {
             <a href="/#features">Features</a>
             <a href="/#faq">FAQ</a>
             <a
-              href="mailto:support@weekday.work"
+              href="https://github.com/joduplessis/weekday"
               target="_blank"
               className="button"
             >

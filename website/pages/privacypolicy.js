@@ -150,7 +150,6 @@ export default function PrivacyPolicy(props) {
         <p>This policy is effective as of 22 June 2020.</p>
         <h2>Address</h2>
         <p>Ballito, Kwazulu-Natal, South Africa</p>
-        <p>Email: support@weekday.work</p>
       </div>
       <Footer />
     </React.Fragment>
